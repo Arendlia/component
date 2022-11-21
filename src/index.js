@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Alerts />
+    <Alerts alert="basic" textBtn="Show Alert" title="Titre" type= "success" text= "texttttt"/>
   </React.StrictMode>
 );
 
