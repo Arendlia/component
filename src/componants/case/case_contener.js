@@ -1,5 +1,5 @@
 import React from 'react'
-import "bootstrap/dist/css/bootstrap.min.css";
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faTruck, faBox, faCreditCard, faHandshakeAngle } from '@fortawesome/free-solid-svg-icons'
