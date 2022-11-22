@@ -13,6 +13,9 @@ function Case(props) {
                   <h4 className = "primary-color"> <FontAwesomeIcon icon={data.icon}/></h4>
                   <h5 className="card-title">{data.title}</h5>
                   <p className="card-text">{data.text}</p>
+                  <div className="card-footer">
+                  <p className = "primary-color">{data.price}</p>
+                  </div>
                 </div>);
 }
 export default Case;
