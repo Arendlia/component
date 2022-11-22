@@ -1,0 +1,13 @@
+{
+    "reassuranceData": [  
+          {"id": 1, "icon": "truck", "title": "Livraison offerte", "text": "dès 100€ d'acaht", "price": ""},
+          {"id": 2,"icon": "box", "title": "Retour gratuit", "text": "sous 30 jours", "price": ""},
+          {"id": 3,"icon": "credit-card", "title": "Paiement sécurisé", "text": "Carte bleu et Paypal", "price": ""},
+          {"id": 4,"icon": "handshake-angle", "title": "Besoin d'aide ?", "text": "Contactez nous par mail: Home2air@support.fr", "price": ""}
+        ],
+    "abonement": [
+        {"id": 1,"icon": "cloud", "title": "Individual", "text": "Une box pour votre intérieur pour contrôler la qualité de votre air à domicile. Le nombre de capteurs est limité à 3.", "price": "119 €"},
+        {"id": 2,"icon": "briefcase", "title": "Pro", "text": "Vous pouvez connecter jusqu'à 50 capteurs à votre box  vous avez aussi accès à un système de parcs pour organiser vos appareil et vous avez accès à un support technique", "price": "119 € + 8/mois"},
+        {"id": 3,"icon": "briefcase-medical", "title": "Pro+", "text": "Vous pouvez connecter jusqu'à 300 capteurs à votre box  vous avez aussi accès à un système de parcs pour organiser vos appareil et vous avez accès à un support technique", "price": "119 € + 8/mois"}
+    ]
+}

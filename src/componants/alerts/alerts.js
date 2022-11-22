@@ -1,25 +1,29 @@
-import React ,{ Component }from 'react'
+import React from 'react'
 import Swal from "sweetalert2";
 import "bootstrap/dist/css/bootstrap.min.css";
+import PropTypes from "prop-types";
 
-function Alerts(props) {
-    const showAlert = (title = "Vous êtes sur ?", text = "This is an alert", type = "success", confirmButtonText = 'OK', position ='center', denyButton = false, denyButtonText="") => {
-        if (props.alert == "basic" ){
+function Alerts({
+  alert, title,  position, textButton, denyButton, denyButtonText, text, type, textBtn
+}) {
+    const showAlert = () => {
+        if (alert === "basic" ){
         Swal.fire({
+            position: position,
             title: title,
             text: text,
             icon: type,
-            confirmButtonText: confirmButtonText,
+            confirmButtonText: textButton,
           });
     }
 
-    else if (props.alert == "delete")
+    else if (alert === "delete")
         Swal.fire({
             position: position,
             title: title,
             showDenyButton: denyButton,
             denyButtonText: denyButtonText,
-            confirmButtonText: confirmButtonText,
+            confirmButtonText: textButton,
           }).then((result) => {
             if (result.isConfirmed) {
             } else if (result.isDenied) {
@@ -30,8 +34,27 @@ function Alerts(props) {
         
             return(
                 <div className="container d-flex justify-content-center">
-                   <button onClick={()=>showAlert( props.title , props.text, props.type, props.textButton, props.position, props.denyButton, props.denyButtonText, props.confirmButtonText)} className="btn btn-primary">{props.textBtn}</button>
+                   <button onClick={()=>showAlert()} className="btn btn-primary">{textBtn}</button>
                 </div>
             )
+}
+Alerts.propTypes = {
+  title : PropTypes.string,
+  text : PropTypes.string, 
+  type : PropTypes.string, 
+  textButton: PropTypes.string, 
+  position :PropTypes.string, 
+  denyButton : PropTypes.bool, 
+  denyButtonText:PropTypes.string,
+  textBtn : PropTypes.string,
+}
+Alerts.defaultProps = {
+  title : "Vous êtes sur ?", 
+  text : "This is an alert", 
+  type : "success", 
+  textButton: "OK", 
+  position :'center', 
+  denyButton : false, 
+  textBtn : "Button"
 }
 export default Alerts;

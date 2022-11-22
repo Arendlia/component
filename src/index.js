@@ -2,13 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Alerts from './componants/alerts/alerts'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Alerts alert="basic" textBtn="Show Alert" title="Titre" type= "success" text= "texttttt"/>
+    <App/>
   </React.StrictMode>
 );
 
