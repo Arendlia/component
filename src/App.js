@@ -4,6 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Alerts from './componants/alerts/alerts'
 import CaseContener from './componants/case/case_contener'
 
+import './scss/base.scss';
+
 function App() {
   return (
     <div className="App">
