@@ -5,6 +5,8 @@ import CaseContener from './componants/case/case_contener'
 import Navbar from './componants/layout/Navbar'
 
 
+import './scss/base.scss';
+
 function App() {
   return (
     
