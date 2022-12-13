@@ -1,6 +1,7 @@
 import React from 'react'
 import Swal from "sweetalert2";
 import PropTypes from "prop-types";
+import './alerts.scss';
 
 function Alerts({
   alert, title,  position, textButton, denyButton, denyButtonText, text, type, textBtn

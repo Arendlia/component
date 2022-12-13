@@ -1,0 +1,9 @@
+@import "./../../scss/variables.scss";
+.swal2-styled.swal2-confirm{
+    background-color: $primary-color-d;
+}
+.white-content{
+    .swal2-styled.swal2-confirm{
+        background-color: $primary-color;
+    }
+}
