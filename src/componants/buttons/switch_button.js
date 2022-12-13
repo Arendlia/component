@@ -3,7 +3,6 @@ import './button.scss';
 
 
 import { ThemeContext, themes } from './../../themes/theme'
-import { SwitchTheme } from './../../themes/switch_theme'
 
 
 function SwitchButton() {
@@ -11,7 +10,7 @@ function SwitchButton() {
         return(
             <ThemeContext.Consumer>
             {({ changeTheme }) => (
-                <label class="switch">
+                <label className="switch">
                 <input type="checkbox" id="checkbox-toggle"
                 
                 onClick={() => {

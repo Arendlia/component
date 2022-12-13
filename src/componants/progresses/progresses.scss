@@ -1,0 +1,58 @@
+@import "./../../scss/base.scss";
+@import "./../../scss/variables.scss";
+
+$width:25%;
+
+.progress-container{
+   .progress {
+    background-color: $secondary-color;
+    width: 80%;
+    height: 1vh;
+    .danger{
+        background-color: $problem-color-d;
+    }
+    .warning{
+        background-color: $warning-color-d;
+    }
+    .success{
+        background-color: $success-color-d;
+    }
+    } 
+    .danger{
+        color: $problem-color-d;
+    }
+    .warning{
+        color: $warning-color-d;
+    }
+    .success{
+        color: $success-color-d;
+    }
+    display:flex;
+}
+
+
+.white-content{
+    .progress-container{
+        .progress {
+            background-color: $middle-color;
+            .danger{
+                background-color: $problem-color;
+            }
+            .warning{
+                background-color: $warning-color;
+            }
+            .success{
+                background-color: $success-color;
+            }
+        }
+            .danger{
+                color: $problem-color-d;
+            }
+            .warning{
+                color: $warning-color-d;
+            }
+            .success{
+                color: $success-color-d;
+            }
+    }
+}

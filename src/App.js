@@ -4,6 +4,7 @@ import Alerts from './componants/alerts/alerts'
 import Navbar from './componants/layout/navbar/Navbar'
 import CaseContener from './componants/case/case_contener'
 import SwitchButton from './componants/buttons/switch_button'
+import Progresses from './componants/progresses/progresses'
 import "bootstrap/dist/css/bootstrap.min.css"
 
 import './scss/base.scss';
@@ -18,6 +19,7 @@ function App() {
       <CaseContener dataType = "reassuranceData"/>
       <CaseContener dataType = "abonement"/>
       <SwitchButton/>
+      <Progresses width = {70} name = "02"/>
     </div>
   );
 }
