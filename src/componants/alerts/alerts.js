@@ -1,6 +1,5 @@
 import React from 'react'
 import Swal from "sweetalert2";
-
 import PropTypes from "prop-types";
 
 function Alerts({
@@ -34,7 +33,7 @@ function Alerts({
         
             return(
                 <div className="container d-flex justify-content-center">
-                   <button onClick={()=>showAlert()} className="btn btn-primary">{textBtn}</button>
+                   <button onClick={()=>showAlert()} className="btn primary-bg shadow-sm light-color">{textBtn}</button>
                 </div>
             )
 }

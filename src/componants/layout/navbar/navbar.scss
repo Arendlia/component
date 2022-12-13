@@ -1,0 +1,27 @@
+@import "./../../../scss/base.scss";
+
+
+.navbar{
+	background-color: $dark-color-d;
+	.nav-link{
+		color: $secondary-color;
+	}
+	.dark-logo{
+		display: none;
+	}
+	.light-logo{
+		display: block;
+	}
+	
+}
+.white-content{
+	.navbar{
+		background-color: $light-color;
+	}
+	.dark-logo{
+		display: block;
+	}
+	.light-logo{
+		display: none;
+	}
+}

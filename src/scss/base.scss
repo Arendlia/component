@@ -1,9 +1,12 @@
 @import "variables";
 @import "mixin";
 
-body{
-    background-color: $background-color;
 
+.white-content{
+    background-color: $background-color;
+    p, h1, h2, h3, h4, h5, h6{
+        color: $dark-color
+    }
     .primary-color{
         color: $primary-color;
     }
@@ -32,5 +35,109 @@ body{
         color: $problem-color;
     }
 
+    .primary-bg{
+        background-color: $primary-color;
+    }
+
+    .secondary-bg{
+        background-color: $primary-color;
+    }
+
+    .light-bg{
+        background-color: $light-color;
+    }
+
+    .dark-bg{
+        background-color: $dark-color;
+    }
+
+    .warning-bg{
+        background-color: $warning-color;
+    }
+
+    .success-bg{
+        background-color: $success-color;
+    }
+
+    .problem-bg{
+        background-color: $problem-color;
+    }
+
+    .swal2-popup{
+        background-color: $background-color;
+    }
+}
+
+
+body{
+    background-color: $background-color-d;
+    
+    p, h1, h2, h3, h4, h5, h6{
+        color: $light-color-d
+    }
+
+    .primary-color{
+        color: $primary-color-d;
+    }
+
+    .secondary-color{
+        color: $secondary-color-d;
+    }
+
+    .light-color{
+        color: $light-color-d;
+    }
+
+    .dark-color{
+        color: $dark-color-d;
+    }
+
+    .warning-color{
+        color: $warning-color-d;
+    }
+
+    .success-color{
+        color: $success-color-d;
+    }
+
+    .problem-color{
+        color: $problem-color-d;
+    }
+
+    .primary-bg{
+        background-color: $primary-color-d;
+    }
+
+    .secondary-bg{
+        background-color: $primary-color-d;
+    }
+
+    .light-bg{
+        background-color: $light-color-d;
+    }
+
+    .dark-bg{
+        background-color: $dark-color-d;
+    }
+
+    .warning-bg{
+        background-color: $warning-color-d;
+    }
+
+    .success-bg{
+        background-color: $success-color-d;
+    }
+
+    .problem-bg{
+        background-color: $problem-color-d;
+    }
+
+    .swal2-popup{
+        background-color: $background-color-d;
+    }
+}
+
+.swal2-popup{
+    width: 40vh;
 }
 

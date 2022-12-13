@@ -1,4 +1,5 @@
 @import "./../../scss/mixin.scss";
+@import "./../../scss/variables.scss";
 
 .case-contenant{
 	@include for-phone-only {    
@@ -8,13 +9,24 @@
 	
 }
 
+.contenant-reassurance{
+	justify-content: space-around;
+	@include for-phone-only {  
+	flex-direction: row;
+	overflow-x: scroll;
+	scroll-behavior: smooth;
+	justify-content: left;
+	}
+}
+
 .reassuranceCase{
     width: 25vh;
     margin-top: 5%;
     margin-bottom: 5%;
     min-height: 10vh;
 	@include for-phone-only {  
-		width: 80%;
+		font-size: 15px;
+		flex: 0 0 20vh;
 	}
 }
 
@@ -27,16 +39,23 @@
 	}
 }
 
-.primary-color{
-    color : #4AA4F6;
-}
-
 .card-body{
+	background-color: $dark-color-d;
     line-height: 10vh;    
     p{
         line-height: 1.5;
+		@include for-phone-only {  
+			font-size: 15px;
+		}
     }
 }
+
+.white-content{
+	.card-body{
+		background-color: $light-color;
+	}
+}
+
 .card-body:hover
 {transform: scale(1);
 	animation: pulse 2s;}
