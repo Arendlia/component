@@ -2,8 +2,13 @@
 .swal2-styled.swal2-confirm{
     background-color: $primary-color-d;
 }
+.btn:hover{
+    background-color: $primary-color-d;
+    color: $light-color-d;
+}
 .white-content{
     .swal2-styled.swal2-confirm{
         background-color: $primary-color;
     }
 }
+
