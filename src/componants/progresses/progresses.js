@@ -6,12 +6,22 @@ import './progresses.scss';
 
 function Progresses(props) {
         var color
-        if (props.width){
-            if (props.width < 33){
+        if (props.width && !props.invers){
+            if (props.width < props.successLimit){
                color = 'success'   
-            }else if (props.width >33 && props.width <66){
+            }else if (props.width >=props.successLimit && props.width <= props.dangerLimit){
                 color = 'warning' 
-            }else if (props.width >66){
+            }else if (props.width > props.dangerLimit){
+                color = 'danger'
+            }
+        }
+
+        if (props.width && props.invers){
+            if (props.width > props.successLimit){
+               color = 'success'   
+            }else if (props.width >=props.dangerLimit && props.width <= props.successLimit){
+                color = 'warning' 
+            }else if (props.width < props.dangerLimit){
                 color = 'danger'
             }
         }
