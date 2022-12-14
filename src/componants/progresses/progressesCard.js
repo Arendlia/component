@@ -13,7 +13,7 @@ function ProgressesCard(props) {
           </div>
           <div className="col-md-8">
             <div className="card-body">
-              <h5 className="card-title">Qualité d'air extérieur aléatoire</h5>
+              <h5 className="card-title primary-color">Qualité d'air extérieur aléatoire: </h5>
               <Progresses width = {rCity.global} name = {rCity.name} successLimit = {66} dangerLimit = {33} invers={true}/>
               <Progresses width = {rCity.CO2} name = "CO2" successLimit = {33} dangerLimit = {66}/>
               <Progresses width = {rCity['Pression de l\'air']} name = "Pression de l'air" successLimit = {33} dangerLimit = {66}/>
