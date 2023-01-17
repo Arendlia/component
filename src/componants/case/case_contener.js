@@ -16,7 +16,7 @@ function CaseContener(props) {
             })}
             </div>
             );
-    }else if(props.dataType === "abonement"){
+    }else if(props.dataType === "abonnement"){
         return (
             <div className="case-contenant d-flex justify-content-around mw-25">
             {datas.abonement.map((data, index) => {

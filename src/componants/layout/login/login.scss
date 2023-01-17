@@ -1,0 +1,78 @@
+@import "./../../../scss/base.scss";
+
+
+.navbar{
+	background-color: $dark-color-d;
+	.nav-link{
+		color: $secondary-color;
+	}
+	.dark-logo{
+		display: none;
+	}
+	.light-logo{
+		display: block;
+	}
+	
+}
+.white-content{
+	.navbar{
+		background-color: $light-color;
+	}
+	.dark-logo{
+		display: block;
+	}
+	.light-logo{
+		display: none;
+	}
+}
+
+body{
+    margin-top:20px;
+}
+.account-block {
+    padding: 0;
+    background-image:url("../../../../public/assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+.account-block .overlay {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.account-block .account-testimonial {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    margin: 0 auto;
+    padding: 0 1.75rem;
+    bottom: 3rem;
+    left: 0;
+    right: 0;
+}
+
+.text-theme {
+    color: #ffffff !important;
+}
+
+.btn-theme {
+    background-color: #5369f8;
+    border-color: #5369f8;
+    color: #fff;
+}
+
+label {
+	color: #ffffff;
+	display: flex;
+	align-self: flex-end;
+	font-weight: 600;
+	line-height: 7vh !important;
+}

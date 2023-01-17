@@ -26,7 +26,6 @@ function Navbar() {
       </li>
     </ul>
     
-    
 
     <a className="navbar-brand d-none d-lg-block" href="#">
       <img className='mx-auto w-25 dark-logo' src='/assets/logo_main.png'/>
@@ -34,10 +33,9 @@ function Navbar() {
     </a>
     
     
-    
     <ul className="navbar-nav">
       <li className="nav-item">
-        <a className="nav-link" href="#">Link</a>
+        <a className="nav-link" href="/">Compte</a>
       </li>
       <li className="nav-item">
         <a className="nav-link" href="#">Link</a>
@@ -48,6 +46,9 @@ function Navbar() {
     </ul>
   </div>
 </nav>
+
+
+
   );
 }
 

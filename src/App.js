@@ -2,12 +2,15 @@ import './App.css'
 import React from 'react'
 import Alerts from './componants/alerts/alerts'
 import Navbar from './componants/layout/navbar/Navbar'
+import Footer from './componants/layout/footer/Footer'
+import Login from './componants/layout/login/Login'
+import Data from './componants/data/data'
+import Register from './componants/layout/register/Register'
 import CaseContener from './componants/case/case_contener'
 import SwitchButton from './componants/buttons/switch_button'
 import Progresses from './componants/progresses/progresses'
 import ProgressesCard from './componants/progresses/progressesCard'
 import "bootstrap/dist/css/bootstrap.min.css"
-
 import './scss/base.scss';
 
 function App() {
@@ -21,7 +24,12 @@ function App() {
       <CaseContener dataType = "abonement"/>
       <SwitchButton/>
       <Progresses width = {70} name = "02" successLimit = {33} dangerLimit = {66} />
-      <ProgressesCard/>
+      {/* <ProgressesCard/> */}
+      {/* <Login />
+      <Register /> */}
+      <Data />
+      <Footer />
+ 
     </div>
   );
 }

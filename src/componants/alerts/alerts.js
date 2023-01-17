@@ -54,7 +54,7 @@ Alerts.defaultProps = {
   type : "success", 
   textButton: "OK", 
   position :'center', 
-  denyButton : false, 
+  denyButton : false,
   textBtn : "Button"
 }
 export default Alerts;
