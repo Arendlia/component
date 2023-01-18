@@ -19,9 +19,9 @@ function CaseContener(props) {
     }else if(props.dataType === "abonnement"){
         return (
             <div className="case-contenant d-flex justify-content-around mw-25">
-            {datas.abonement.map((data, index) => {
+            {datas.abonnement.map((data, index) => {
                 return (
-                <div className="abonementCase mx-4 card-body shadow-lg p-3 rounded" >
+                <div className="abonnementCase mx-4 card-body shadow-lg p-3 rounded" >
                     <Case data = {data} index = {index}/>
                 </div>
                 );

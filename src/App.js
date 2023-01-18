@@ -21,7 +21,7 @@ function App() {
       <Alerts alert="basic" textBtn="Show Alert" title="Titre" type= "success" text= "texttttt"/>
       <Alerts alert="delete" textBtn="Show delete Alert" title="Supprimer le compte ?"  position= "top-end" denyButton={true} denyButtonText = "Oui" textButton="Non"/>
       <CaseContener dataType = "reassuranceData"/>
-      <CaseContener dataType = "abonement"/>
+      <CaseContener dataType = "abonnement"/>
       <SwitchButton/>
       <Progresses width = {70} name = "02" successLimit = {33} dangerLimit = {66} />
       {/* <ProgressesCard/> */}
