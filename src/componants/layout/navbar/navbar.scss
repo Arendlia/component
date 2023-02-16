@@ -1,4 +1,5 @@
 @import "./../../../scss/base.scss";
+@import "./../../../scss/mixin.scss";
 
 
 .navbar{
@@ -12,6 +13,30 @@
 	.light-logo{
 		display: block;
 	}
+	.phone-menu{
+		display:none;
+	}
+	.nav-item{
+		display: flex;
+		flex-direction: column;
+	}
+	@include for-phone-only { 
+		.navbar{
+			width: 105%;
+		}
+		.navbar-brand{
+			margin-left: 5%;
+		}
+		img{
+			width: 50px;
+		}
+		.phone-menu{
+			display:contents;
+		}
+		
+	 }
+
+
 	
 }
 .white-content{

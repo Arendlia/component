@@ -14,8 +14,8 @@ function SwitchButton() {
                 <input type="checkbox" id="checkbox-toggle"
                 
                 onClick={() => {
-                    setDarkMode(!darkMode);
-                    changeTheme(darkMode ? themes.light : themes.dark);
+                        setDarkMode(!darkMode);
+                        changeTheme(darkMode ? themes.light : themes.dark);
                 }}/>
                 <span className="slider round"></span>
                 </label>

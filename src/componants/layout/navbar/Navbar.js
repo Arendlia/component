@@ -1,3 +1,7 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUser, faHeart, faDisplay, faQuestion, faToggleOff } from '@fortawesome/free-solid-svg-icons'
+import Burger from './../../burger/burger'
+import SwitchButton from './../../buttons/switch_button'
 import './navbar.scss';
 
 function Navbar() {
@@ -5,45 +9,45 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg shadow">
 
 
-  <a className="navbar-brand d-lg-none" href="#">Navbar</a>
+  <a className="navbar-brand d-lg-none" href="#">
+    <img className='dark-logo' src='/assets/logo-mobile-dark.png'/>
+    <img className='light-logo' src='/assets/logo-mobile-light.png'/>
+  </a>
+  <div className='phone-menu'>
+    <Burger/>
+  </div>
+  
 
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button>
 
-
-  <div className="collapse navbar-collapse justify-content-between" id="navbarToggle">
+  <div className="collapse navbar-collapse justify-content-between px-3" id="navbarToggle">
 
     <ul className="navbar-nav">
       <li className="nav-item">
-        <a className="nav-link" href="#">Home</a>
+        <a className="nav-link" href="#">Mon Compte</a>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Shop</a>
+        <a className="nav-link" href="#">Mes Appareils</a>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">A propos</a>
+        <a className="nav-link" href="#">Support</a>
       </li>
     </ul>
     
+    
 
-    <a className="navbar-brand d-none d-lg-block" href="#">
-      <img className='mx-auto w-25 dark-logo' src='/assets/logo_main.png'/>
-      <img className='mx-auto w-25 light-logo' src='/assets/logo_main_light.png'/>
+    <a className="navbar-brand d-none d-lg-block mx-auto" href="#">
+      <img className='w-25 dark-logo' src='/assets/logo_main.png'/>
+      <img className='w-25 light-logo' src='/assets/logo_main_light.png'/>
     </a>
     
     
-    <ul className="navbar-nav">
-      <li className="nav-item">
-        <a className="nav-link" href="/">Compte</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">Link</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">Link</a>
-      </li>
-    </ul>
+    <div className="navbar-nav">
+      <div className="nav-item my-auto mx-auto">
+        <SwitchButton/>
+        <p className='secondary-color'>Theme</p>
+      </div>
+    </div>
+   
   </div>
 </nav>
 

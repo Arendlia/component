@@ -1,0 +1,27 @@
+@import "./../../scss/variables.scss";
+  .burger{
+    margin-right: 5%;
+    color: $light-color;
+  }
+  .burger-menu{
+    background-color: $dark-color-d;
+    color: $light-color;
+      .menu{
+        background-color: $dark-color-d;
+        color: $light-color;
+      }
+  }
+
+  .white-content{
+    .burger{
+        color: $dark-color;
+    }
+    .burger-menu{
+      background-color: $light-color;
+      color: $dark-color;
+      .menu{
+        background-color: $light-color;
+        color: $dark-color;
+      }
+    }
+  }
